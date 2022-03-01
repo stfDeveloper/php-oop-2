@@ -23,7 +23,7 @@ class Spettacolo{
     }
     //milestone 4
     public function orarioFine($_orario ){
-        $this->orario =  ,
+        $this->orario =  
     }
 }
 
