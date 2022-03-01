@@ -1,9 +1,9 @@
 <?php 
-class cinema{
-    public $nomeCinema;
-    public $indirizzo;
-    public $telefono;
-    public $totSale;
+class Cinema{
+    private $nomeCinema;
+    private $indirizzo;
+    private $telefono;
+    private $totSale;
     // private $dipendenti;
     // private $prenotazioni;
 

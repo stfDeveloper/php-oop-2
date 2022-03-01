@@ -1,9 +1,12 @@
 <?php 
-class sale4D{
-    public $nrSalaImmersiva;
-    public $nrPostiImmersiva;
+
+require_once __DIR__.'/Sale.php';
+
+class Sala4D extends Sala {
     public $effetti;
-   
-   
+
 }
+
+
+
 ?>
