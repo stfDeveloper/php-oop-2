@@ -1,7 +1,7 @@
 <?php 
 class Sala{
-    protected $nrSala;
-    protected $nrPosti;
+    public $nrSala;
+    public $nrPosti;
 
     public function __construct($_nrSala,$_nrPosti){
         $this->nrSala = $_nrSala;
@@ -9,6 +9,9 @@ class Sala{
     }
     public function getDataSala(){
         return [$this->nrSala,$this->nrPosti];
+    }
+    public function totale(){
+        return $this->nrPosti;
     }
 }
 
