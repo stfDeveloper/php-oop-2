@@ -56,6 +56,12 @@ $saleLista = [
 // milestone 1
 var_dump($saleLista);
 
+
+//milestone 4
+
+$fineFilm = time($Spettacolo->orario) - ($Film->durata);
+var_dump($fineFilm);
+
 $spettacoli = [];
 $spettacoli[] = new Spettacolo ($saleLista[0],"2/3/2022","14:00",$listaFilm[0]);
 $spettacoli[] = new Spettacolo ($saleLista[1],"2/3/2022","16:10",$listaFilm[1]);
@@ -108,6 +114,14 @@ var_dump($spettacoli);
             foreach ($spettacoli as $proiettato){
                 if ($proiettato->film()==$listaFilm[0] && $proiettato->data()=="2/3/2022"){
                     $proiezioni++;
+                }
+            }
+            //milestone 4
+            $giorno = "03.03.2022";
+            foreach ($spettacoli as $element) {
+                $time ="";
+                if(($element->data() == $giorno) && $element->data() >$time){
+                    $time=$element->data();
                 }
             }
         ?>

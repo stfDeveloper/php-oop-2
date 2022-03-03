@@ -2,7 +2,7 @@
 class Film{
     private $titolo;
     private $genere;
-    private $durata;
+    public $durata;
     private $attori;
 
     public function __construct($_titolo,$_genere,$_durata, $_attori = []){

@@ -21,11 +21,10 @@ class Spettacolo{
     public function data(){
         return $this->data;
     }
-    //milestone 4
-    public function orarioFine($_orario ){
-        $this->orario =  
-    }
+    
+    
 }
+
 
 
 ?>
